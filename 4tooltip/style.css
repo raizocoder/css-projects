@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container {
+  border: 2px solid white;
+  height: 450px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-inline: 10px;
+}
+.icons {
+  cursor: pointer;
+  position: relative;
+}
+p {
+  padding: 16px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.mongo {
+  color: rgba(24, 186, 24, 0.877);
+}
+.express {
+  color: white;
+}
+.react {
+  color: rgba(90, 186, 242, 0.859);
+}
+.node {
+  color: rgb(67, 180, 67);
+}
+span {
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  position: absolute;
+  opacity: 0;
+  top: -30px;
+  left: -16px;
+  right: -12px;
+  z-index: 3;
+  font-size: 20px;
+  height: 55px;
+  width: 120px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  &.mongodb {
+    background-color: rgb(24, 186, 24);
+  }
+  &.expressjs {
+    background-color: white;
+    color: black;
+  }
+  &.reactjs {
+    background-color: rgb(57, 169, 234);
+    color: black;
+  }
+  &.nodejs {
+    background-color: rgb(67, 180, 67);
+  }
+}
+.icons:hover {
+  .mongodb {
+    opacity: 1;
+    top: -70px;
+  }
+  .trimongodb {
+    opacity: 1;
+  }
+}
+.icons:hover {
+  .expressjs {
+    opacity: 1;
+    top: -70px;
+  }
+  .triexpress {
+    opacity: 1;
+  }
+}
+.icons:hover {
+  .reactjs {
+    opacity: 1;
+    top: -70px;
+  }
+  .trireact {
+    opacity: 1;
+  }
+}
+.icons:hover {
+  .nodejs {
+    opacity: 1;
+    top: -70px;
+  }
+  .trinode {
+    opacity: 1;
+  }
+}
+
+.trimongodb {
+  position: absolute;
+  background-color: rgb(24, 186, 24);
+  height: 25px;
+  width: 25px;
+  top: -25%;
+  left: 35%;
+  z-index: 2;
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg)
+    rotateZ(44deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg)
+    skewY(0deg);
+  opacity: 0;
+}
+.triexpress {
+  position: absolute;
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  top: -25%;
+  left: 35%;
+  z-index: 2;
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg)
+    rotateZ(44deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg)
+    skewY(0deg);
+  opacity: 0;
+}
+.trireact {
+  position: absolute;
+  background-color: rgb(57, 169, 234);
+  height: 25px;
+  width: 25px;
+  top: -25%;
+  left: 35%;
+  z-index: 2;
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg)
+    rotateZ(44deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg)
+    skewY(0deg);
+  opacity: 0;
+}
+.trinode {
+  position: absolute;
+  background-color: rgb(67, 180, 67);
+  height: 25px;
+  width: 25px;
+  top: -25%;
+  left: 35%;
+  z-index: 2;
+  transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg)
+    rotateZ(44deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg)
+    skewY(0deg);
+  opacity: 0;
+}
+@media (max-width:500px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        padding-block: 30px;
+    }
+    .icons{
+        border: 1px solid white;
+        margin: 10px;
+    }
+}
